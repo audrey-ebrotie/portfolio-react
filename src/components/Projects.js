@@ -75,7 +75,7 @@ function Projects() {
                             />
                             <div style={{ padding: '1rem' }}>
                                 <h3>{projet.titre}</h3>
-                                <p>{projet.description}</p>
+                                <p style= {{minHeight:"4rem"}}>{projet.description}</p>
                                 <span style={{
                                     display: 'inline-block',
                                     marginTop: '0.5rem',
