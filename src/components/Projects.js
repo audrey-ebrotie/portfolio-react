@@ -6,7 +6,7 @@ const projets = [
         id: 1, 
         titre: "Portfolio Audrey EBROTIE", 
         description: "Mon portfolio en React v18.", 
-        url: "https://monportfolio.com", 
+        url: "https://audrey-ebrotie.github.io/portfolio-react", 
         image: `${process.env.PUBLIC_URL}/portfolio.png` 
     },
     { 

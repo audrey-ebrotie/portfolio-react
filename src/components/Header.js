@@ -14,10 +14,10 @@ function Header() {
                 </ul>
             </nav>
             <div className="social-icons">
-                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/audrey-ebrotie" target="_blank" rel="noopener noreferrer">
                     <FaGithub />
                 </a>
-                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <a href="https://linkedin.com/in/audrey-ebrotie/" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin />
                 </a>
             </div>
