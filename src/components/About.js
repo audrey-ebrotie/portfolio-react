@@ -21,7 +21,7 @@ function About() {
         >
             <h2 style={{ marginBottom: '1rem' }}>Présentation</h2>
             <img
-                src="/photo-profil-Audrey.jpg"
+                src={`${process.env.PUBLIC_URL}/photo-profil-Audrey.jpg`}
                 alt="Portrait d'Audrey"
                 style={{
                     width: '200px',

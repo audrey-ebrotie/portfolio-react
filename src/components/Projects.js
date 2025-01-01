@@ -7,21 +7,21 @@ const projets = [
         titre: "Portfolio", 
         description: "Mon portfolio en React.", 
         url: "https://monportfolio.com", 
-        image: "/portfolio.png" 
+        image: `${process.env.PUBLIC_URL}/portfolio.png` 
     },
     { 
         id: 2, 
         titre: "Site IANWILL", 
         description: "Site du groupe de metal français IANWILL en Wordpress.", 
         url: "https://ianwillofficial.com", 
-        image: "/ianwill.png" 
+        image: `${process.env.PUBLIC_URL}/ianwill.png` 
     },
     { 
         id: 3, 
         titre: "Galerie photos/videos", 
         description: "Site du photographe et vidéaste lillois Rémi DELECROIX.", 
         url: "https://remi-delecroix.com", 
-        image: "/remi-delecroix.png" 
+        image: `${process.env.PUBLIC_URL}/remi-delecroix.png` 
     },
 ];
 

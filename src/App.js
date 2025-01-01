@@ -8,7 +8,7 @@ import './styles/global.css';
 function App() {
     return (
         <div className="app-container">
-            <Router>
+            <Router basename="/portfolio-react">
                 <Header />
                 <main className="main-content">
                     <AnimatedRoutes />
