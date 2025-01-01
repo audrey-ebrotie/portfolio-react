@@ -1,71 +1,92 @@
-# Getting Started with Create React App
+# Portfolio en React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bienvenue sur mon portfolio, un projet réalisé avec **React v18.2.0**. Ce site présente mes projets, mes compétences et offre un aperçu de mon travail en tant que développeuse.
 
-## Available Scripts
+## 🌟 Objectif du projet
 
-In the project directory, you can run:
+Créer un portfolio interactif, moderne et responsive permettant de présenter mes réalisations professionnelles et personnelles. Ce portfolio est conçu pour offrir une navigation fluide et intuitive, tout en mettant en valeur mes projets.
 
-### `npm start`
+## 🚀 Fonctionnalités
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🖼️ **Présentation des projets** : Une section dédiée à mes réalisations avec des vignettes cliquables menant aux projets en ligne.
+- 🎨 **Animations fluides** : Utilisation de **Framer Motion** pour ajouter des transitions élégantes et interactives.
+- 🛠️ **Architecture modulaire** : Composants réutilisables pour une maintenance et une évolutivité facilitées.
+- 📱 **Responsive Design** : Une interface adaptée aux mobiles, tablettes et ordinateurs.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📚 Technologies utilisées
 
-### `npm test`
+- [React](https://reactjs.org/) (v18.2.0) : Bibliothèque JavaScript pour la création d'interfaces utilisateur.
+- [React Router](https://reactrouter.com/) (v7.1.1) : Gestion des routes pour la navigation.
+- [Framer Motion](https://www.framer.com/motion/) (v11.15.0) : Gestion des animations.
+- [React Icons](https://react-icons.github.io/react-icons/) : Pack d'icônes vectorielles.
+- [React Transition Group](https://reactcommunity.org/react-transition-group/) (v4.4.5) : Animations des transitions de composants.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 💽 Arborescence du projet
 
-### `npm run build`
+Voici un aperçu de la structure du projet :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+portfolio/
+│
+├── public/
+│   ├── index.html      # Point d'entrée principal
+│   ├── images/         # Images utilisées pour les projets
+│   └── favicon.ico     # Icône du site
+│
+├── src/
+│   ├── components/     # Composants React (Header, Footer, AnimatedRoutes, etc.)
+│   ├── styles/         # Feuilles de style CSS globales
+│   ├── App.js          # Composant principal
+│   ├── index.js        # Point d'entrée React
+│   └── assets/         # Ressources supplémentaires (images, icônes, etc.)
+│
+├── .gitignore          # Fichiers à ignorer par Git
+├── package.json        # Dépendances et scripts du projet
+└── README.md           # Documentation du projet
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Installation et utilisation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prérequis
 
-### `npm run eject`
+- **Node.js** (v16 ou supérieur)
+- **npm** (v8 ou supérieur)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Étapes
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clonez le projet sur votre machine locale :
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   git clone https://github.com/audrey-ebrotie/portfolio-react.git
+   cd portfolio-react
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Installez les dépendances :
 
-## Learn More
+   ```bash
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Lancez l'application en mode développement :
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm start
+   ```
 
-### Code Splitting
+4. Ouvrez le site dans votre navigateur à l'adresse suivante :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```
+   http://localhost:3000
+   ```
 
-### Analyzing the Bundle Size
+5. Pour générer un build de production :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```bash
+   npm run build
+   ```
 
-### Making a Progressive Web App
+6. Pour déployer le site sur GitHub Pages :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# portfolio
+   ```bash
+   npm run deploy
+   ```

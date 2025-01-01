@@ -4,14 +4,14 @@ import { motion } from 'framer-motion';
 const projets = [
     { 
         id: 1, 
-        titre: "Portfolio", 
-        description: "Mon portfolio en React.", 
+        titre: "Portfolio Audrey EBROTIE", 
+        description: "Mon portfolio en React v18.", 
         url: "https://monportfolio.com", 
         image: `${process.env.PUBLIC_URL}/portfolio.png` 
     },
     { 
         id: 2, 
-        titre: "Site IANWILL", 
+        titre: "Site du groupe IANWILL", 
         description: "Site du groupe de metal français IANWILL en Wordpress.", 
         url: "https://ianwillofficial.com", 
         image: `${process.env.PUBLIC_URL}/ianwill.png` 
@@ -19,7 +19,7 @@ const projets = [
     { 
         id: 3, 
         titre: "Galerie photos/videos", 
-        description: "Site du photographe et vidéaste lillois Rémi DELECROIX.", 
+        description: "Site du photographe et vidéaste lillois Rémi DELECROIX en Symfony v6.", 
         url: "https://remi-delecroix.com", 
         image: `${process.env.PUBLIC_URL}/remi-delecroix.png` 
     },
