@@ -2,12 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 function About() {
+    const cvUrl = `${process.env.PUBLIC_URL}/cv-audrey-ebrotie-fr.pdf`;
+
     return (
         <motion.section
             id="about"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -50 }}
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 50 }}
             transition={{ duration: 0.5 }}
             style={{
                 textAlign: 'center',
@@ -31,6 +33,29 @@ function About() {
                     marginBottom: '1rem',
                 }}
             />
+            <div style={{ marginTop: '1rem', marginBottom: '2rem', }}>
+            <motion.a
+                    href={cvUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{
+                        scale: 1.1,
+                        backgroundColor: "#a462f7",
+                        transition: { duration: 0.3 },
+                    }}
+                    style={{
+                        textDecoration: 'none',
+                        color: 'white',
+                        backgroundColor: '#c892ff',
+                        padding: '0.8rem 1.5rem',
+                        borderRadius: '5px',
+                        margin: '0 0.5rem',
+                        display: 'inline-block',
+                    }}
+                >
+                    Mon curriculum vitae
+                </motion.a>
+            </div>
             <p style={{ lineHeight: '1.6', fontSize: '1rem' }}>
                 Bonjour ! Je m'appelle <strong>Audrey EBROTIE</strong>, j'habite à Lille, j'ai 37 ans et je suis développeuse Front-End.<br /><br />
                 Après 7 ans dans le secteur des assurances / mutuelles, j'ai fait une reconversion professionnelle pour devenir développeuse Web 💻, un métier qui m'attire depuis toujours (ou presque^^).<br /><br />
