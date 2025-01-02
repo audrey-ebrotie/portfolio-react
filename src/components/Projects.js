@@ -34,18 +34,22 @@ function Projects() {
             exit={{ opacity: 0, x: 50 }}
             transition={{ duration: 0.5 }}
         >
-            <h2>Projets</h2>
+            <h2 style={{ textAlign: 'center', marginBottom: '2rem' }}>Projets</h2>
             <ul style={{
                 display: 'flex',
                 flexWrap: 'wrap',
-                gap: '1rem',
+                gap: '1.5rem',
                 justifyContent: 'center',
                 padding: '0',
                 listStyle: 'none',
+                margin: '0 auto',
+                maxWidth: '1200px',
             }}>
                 {projets.map((projet) => (
                     <li key={projet.id} style={{
-                        width: '30vw',
+                        flex: '1 1 calc(100% - 2rem)', // Utilisé pour des petits écrans
+                        maxWidth: '30%', // Réduit pour les écrans moyens et grands
+                        minWidth: '280px', // Taille minimale pour éviter de casser la mise en page
                         background: '#fff',
                         boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
                         borderRadius: '8px',
@@ -62,6 +66,8 @@ function Projects() {
                             style={{
                                 textDecoration: 'none',
                                 color: 'inherit',
+                                display: 'block',
+                                width: '100%',
                             }}
                         >
                             <img 
@@ -75,7 +81,7 @@ function Projects() {
                             />
                             <div style={{ padding: '1rem' }}>
                                 <h3>{projet.titre}</h3>
-                                <p style= {{minHeight:"4rem"}}>{projet.description}</p>
+                                <p style={{ minHeight: "4rem" }}>{projet.description}</p>
                                 <span style={{
                                     display: 'inline-block',
                                     marginTop: '0.5rem',
