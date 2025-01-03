@@ -40,8 +40,8 @@ function About() {
                     rel="noopener noreferrer"
                     whileHover={{
                         scale: 1.1,
-                        backgroundColor: "#a462f7",
-                        transition: { duration: 0.3 },
+                        y: -5, 
+                        boxShadow: '0 10px 15px rgba(0, 0, 0, 0.2)',
                     }}
                     style={{
                         textDecoration: 'none',

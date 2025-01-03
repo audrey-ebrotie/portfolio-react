@@ -82,18 +82,29 @@ function Projects() {
                             <div style={{ padding: '1rem' }}>
                                 <h3>{projet.titre}</h3>
                                 <p style={{ minHeight: "4rem" }}>{projet.description}</p>
-                                <span style={{
-                                    display: 'inline-block',
-                                    marginTop: '0.5rem',
-                                    padding: '0.5rem 1rem',
-                                    background: '#c892ff',
-                                    color: '#fff',
-                                    borderRadius: '4px',
-                                    fontWeight: 'bold',
-                                    textDecoration: 'none',
-                                }}>
+                                <motion.span
+                                    whileHover={{
+                                        scale: 1.1,
+                                        y: -5,
+                                        boxShadow: '0 10px 15px rgba(0, 0, 0, 0.2)',
+                                    }}
+                                    whileTap={{
+                                        scale: 0.95,
+                                    }}
+                                    style={{
+                                        display: 'inline-block',
+                                        marginTop: '0.5rem',
+                                        padding: '0.5rem 1rem',
+                                        background: '#c892ff',
+                                        color: '#fff',
+                                        borderRadius: '4px',
+                                        fontWeight: 'bold',
+                                        textDecoration: 'none',
+                                        cursor: 'pointer',
+                                    }}
+                                >
                                     Voir le projet
-                                </span>
+                                </motion.span>
                             </div>
                         </a>
                     </li>

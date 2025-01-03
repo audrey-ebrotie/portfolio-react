@@ -72,8 +72,6 @@ textarea {
 
 .submit-button:hover {
     background: linear-gradient(45deg, #d3bdf5, #9962cf);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
-
-
