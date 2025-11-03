@@ -25,6 +25,21 @@ function Header() {
 
     return (
         <header className="header">
+            {/* Nom et prénom à gauche */}
+            <div className="header-name">
+                <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
+                    <h1 style={{ 
+                        margin: 0, 
+                        fontSize: '1.3rem', 
+                        fontWeight: '600',
+                        letterSpacing: '0.5px'
+                    }}>
+                        Audrey EBROTIE
+                    </h1>
+                </Link>
+            </div>
+
+            {/* Navigation au centre */}
             <nav className="nav-bar">
                 <ul className="nav-links">
                     <li><Link to="/" className="nav-item">{currentContent.about}</Link></li>
@@ -32,8 +47,9 @@ function Header() {
                     <li><Link to="/contact" className="nav-item">{currentContent.contact}</Link></li>
                 </ul>
             </nav>
+
+            {/* Bouton langue et icônes sociales à droite */}
             <div className="header-right">
-                {/* Bouton de langue */}
                 <motion.button
                     onClick={toggleLanguage}
                     whileHover={{ scale: 1.1 }}
@@ -54,7 +70,6 @@ function Header() {
                     {language === 'fr' ? '🇬🇧 EN' : '🇫🇷 FR'}
                 </motion.button>
 
-                {/* Icônes sociales */}
                 <div className="social-icons">
                     <a href="https://github.com/audrey-ebrotie" target="_blank" rel="noopener noreferrer">
                         <FaGithub />

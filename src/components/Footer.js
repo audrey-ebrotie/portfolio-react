@@ -1,10 +1,28 @@
 import React from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 import '../styles/footer.css';
 
 function Footer() {
+    const { language } = useLanguage();
+
+    const content = {
+        fr: {
+            rights: "Tous droits réservés",
+        },
+        en: {
+            rights: "All rights reserved",
+        }
+    };
+
+    const currentContent = content[language];
+
     return (
-        <footer style={{ background: '#333', color: '#fff', textAlign: 'center', padding: '1rem' }}>
-            <p>&copy; {new Date().getFullYear()} Mon Portfolio. Tous droits réservés.</p>
+        <footer className="footer">
+            <div className="footer-content">
+                <p className="footer-text">
+                    &copy; {new Date().getFullYear()} Audrey Ebrotié. {currentContent.rights}.
+                </p>
+            </div>
         </footer>
     );
 }

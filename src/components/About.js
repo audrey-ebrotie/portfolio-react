@@ -9,7 +9,7 @@ function About() {
 
     const content = {
         fr: {
-            title: "Présentation",
+            title: "Hello ! 👋 Bienvenue sur mon portfolio !",
             cvButton: "Mon curriculum vitae",
             intro: "🚀 Développeuse web & Growth Hacker (freelance ou CDD/CDI)",
             introText: "Je mets mes compétences techniques, créatives et stratégiques au service des entreprises pour les accompagner sur des projets variés : développement web, automatisation, création de landing pages, stratégies d'acquisition et bien plus encore.",
@@ -29,7 +29,7 @@ function About() {
             contactLabel: "Contact :"
         },
         en: {
-            title: "About Me",
+            title: "Hello ! 👋 Welcome on my portfolio !",
             cvButton: "My resume",
             intro: "🚀 Web Developer & Growth Hacker (Freelance or Full-time/Part-time)",
             introText: "I bring my technical, creative, and strategic skills to help businesses with diverse projects: web development, automation, landing page creation, acquisition strategies, and more.",
