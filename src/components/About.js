@@ -1,8 +1,57 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../contexts/LanguageContext';
 
 function About() {
-    const cvUrl = `${process.env.PUBLIC_URL}/cv-audrey-ebrotie-fr.pdf`;
+    const { language } = useLanguage();
+    const cvUrlFr = `${process.env.PUBLIC_URL}/cv-audrey-ebrotie-fr.pdf`;
+    const cvUrlEn = `${process.env.PUBLIC_URL}/cv-audrey-ebrotie-en.pdf`;
+
+    const content = {
+        fr: {
+            title: "Présentation",
+            cvButton: "Mon curriculum vitae",
+            intro: "🚀 Développeuse web & Growth Hacker (freelance ou CDD/CDI)",
+            introText: "Je mets mes compétences techniques, créatives et stratégiques au service des entreprises pour les accompagner sur des projets variés : développement web, automatisation, création de landing pages, stratégies d'acquisition et bien plus encore.",
+            valueTitle: "💡 Ma proposition de valeur",
+            valueText: "Spécialisée dans les projets où croissance rime avec expérimentation, j'interviens à l'intersection de la tech, de la data et du marketing. Forte de mon expérience en développement web, de mon sens analytique et de ma créativité, j'identifie des leviers de croissance concrets et les active rapidement pour générer des résultats mesurables.",
+            expertiseTitle: "🧰 Mes expertises clés",
+            expertise: [
+                { label: "Développement web :", value: "React, Symfony, WordPress, Drupal, PHP, JavaScript, HTML, CSS" },
+                { label: "Landing pages & design :", value: "Webflow, Carrd, Photoshop, Illustrator, Canva" },
+                { label: "SEO & analytics :", value: "Google Analytics, Google Tag Manager" },
+                { label: "Automatisation & no-code :", value: "Make, n8n, Airtable, Brevo, HubSpot" },
+                { label: "Création de contenu :", value: "Photoshop, CapCut, Canva pour vos réseaux sociaux" },
+                { label: "Gestion de projet :", value: "Relation client & optimisation des process" }
+            ],
+            ctaTitle: "✨ Discutons de votre projet !",
+            ctaText: "Vous recherchez un profil hybride tech / marketing / growth pour dynamiser vos projets ? Discutons de vos besoins et de la manière dont je peux vous aider à atteindre vos objectifs !",
+            contactLabel: "Contact :"
+        },
+        en: {
+            title: "About Me",
+            cvButton: "My resume",
+            intro: "🚀 Web Developer & Growth Hacker (Freelance or Full-time/Part-time)",
+            introText: "I bring my technical, creative, and strategic skills to help businesses with diverse projects: web development, automation, landing page creation, acquisition strategies, and more.",
+            valueTitle: "💡 My Value Proposition",
+            valueText: "Specialized in projects where growth meets experimentation, I work at the intersection of tech, data, and marketing. With my web development background, analytical mindset, and creativity, I identify concrete growth opportunities and activate them quickly to generate measurable results.",
+            expertiseTitle: "🧰 Core Expertise",
+            expertise: [
+                { label: "Web Development:", value: "React, Symfony, WordPress, Drupal, PHP, JavaScript, HTML, CSS" },
+                { label: "Landing Pages & Design:", value: "Webflow, Carrd, Photoshop, Illustrator, Canva" },
+                { label: "SEO & Analytics:", value: "Google Analytics, Google Tag Manager" },
+                { label: "Automation & No-code:", value: "Make, n8n, Airtable, Brevo, HubSpot" },
+                { label: "Content Creation:", value: "Photoshop, CapCut, Canva for social media" },
+                { label: "Project Management:", value: "Client relations & process optimization" }
+            ],
+            ctaTitle: "✨ Let's talk about your project !",
+            ctaText: "Looking for a hybrid tech / marketing / growth profile to boost your projects? Let's discuss your needs and how I can help you achieve your goals!",
+            contactLabel: "Contact:"
+        }
+    };
+
+    const currentContent = content[language];
+    const cvUrl = language === 'fr' ? cvUrlFr : cvUrlEn;
 
     return (
         <motion.section
@@ -21,7 +70,7 @@ function About() {
                 margin: '2rem auto',
             }}
         >
-            <h2 style={{ marginBottom: '1rem' }}>Présentation</h2>
+            <h2 style={{ marginBottom: '1rem' }}>{currentContent.title}</h2>
             <img
                 src={`${process.env.PUBLIC_URL}/photo-profil-Audrey.jpg`}
                 alt="Portrait d'Audrey"
@@ -33,14 +82,14 @@ function About() {
                     marginBottom: '1rem',
                 }}
             />
-            <div style={{ marginTop: '1rem', marginBottom: '2rem', }}>
-            <motion.a
+            <div style={{ marginTop: '1rem', marginBottom: '2rem' }}>
+                <motion.a
                     href={cvUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{
                         scale: 1.1,
-                        y: -5, 
+                        y: -5,
                         boxShadow: '0 10px 15px rgba(0, 0, 0, 0.2)',
                     }}
                     style={{
@@ -53,18 +102,53 @@ function About() {
                         display: 'inline-block',
                     }}
                 >
-                    Mon curriculum vitae
+                    {currentContent.cvButton}
                 </motion.a>
             </div>
-            <p style={{ lineHeight: '1.6', fontSize: '1rem' }}>
-                Bonjour ! Je m'appelle <strong>Audrey EBROTIE</strong>, j'habite à Lille, j'ai 37 ans et je suis développeuse Front-End.<br /><br />
-                Après 7 ans dans le secteur des assurances / mutuelles, j'ai fait une reconversion professionnelle pour devenir développeuse Web 💻, un métier qui m'attire depuis toujours (ou presque^^).<br /><br />
-                J'ai effectué la formation "Développeur Web / Mobile" au sein du centre de formation Webforce3 de Lille (La Madeleine), puis ai enchaîné avec un premier stage de 2 mois chez Giphar Technologies (Loos) en tant que développeuse logiciel back-end.<br /><br />
-                J'ai ensuite poursuivi ma formation avec un second stage de 5 mois chez Smile (Lille) en tant que développeuse web au service TMA, stage à l'issue duquel j'ai été embauchée 🎉🍾<br /><br />
-                Par la suite en octobre 2022, j'ai obtenu le titre professionnel de niveau 5 de Développeur web et web mobile 🥳<br /><br />
-                Après 1 an et demi chez Smile, une superbe opportunité s'est présentée à moi et j'ai décidé de la saisir : c'est ainsi que je rejoins FFW en tant que développeuse front-end. Après avoir rejoint le groupe Jakala, FFW devient officiellement Jakala en mai 2024.<br /><br />
-                Ma collaboration avec Jakala vient tout juste de se terminer en octobre 2024, je suis actuellement disponible et ouverte à de nouvelles opportunités.
-            </p>
+
+            <motion.div
+                key={language}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4 }}
+                style={{ lineHeight: '1.8', fontSize: '1rem', textAlign: 'left' }}
+            >
+                <p style={{ marginBottom: '1.5rem' }}>
+                    <strong>{currentContent.intro}</strong>
+                </p>
+                <p style={{ marginBottom: '1.5rem' }}>
+                    {currentContent.introText}
+                </p>
+
+                <p style={{ marginBottom: '1rem' }}>
+                    <strong>{currentContent.valueTitle}</strong>
+                </p>
+                <p style={{ marginBottom: '1.5rem' }}>
+                    {currentContent.valueText}
+                </p>
+
+                <p style={{ marginBottom: '1rem' }}>
+                    <strong>{currentContent.expertiseTitle}</strong>
+                </p>
+                <ul style={{ textAlign: 'left', marginBottom: '1.5rem', paddingLeft: '2rem' }}>
+                    {currentContent.expertise.map((item, index) => (
+                        <li key={index}>
+                            <strong>{item.label}</strong> {item.value}
+                        </li>
+                    ))}
+                </ul>
+
+                <p style={{ marginBottom: '1rem' }}>
+                    <strong>{currentContent.ctaTitle}</strong>
+                </p>
+                <p style={{ marginBottom: '1.5rem' }}>
+                    {currentContent.ctaText}
+                </p>
+
+                <p style={{ textAlign: 'center', fontSize: '1.1rem' }}>
+                    <strong>📩 {currentContent.contactLabel}</strong> <a href="mailto:audrey.ebrotie@gmail.com" style={{ color: '#c892ff', textDecoration: 'none' }}>audrey.ebrotie@gmail.com</a>
+                </p>
+            </motion.div>
         </motion.section>
     );
 }
