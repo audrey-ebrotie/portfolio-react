@@ -11,41 +11,37 @@ function About() {
         fr: {
             title: "Hello ! 👋 Bienvenue sur mon portfolio !",
             cvButton: "Mon curriculum vitae",
-            intro: "🚀 Développeuse web & Growth Hacker (freelance ou CDD/CDI)",
-            introText: "Je mets mes compétences techniques, créatives et stratégiques au service des entreprises pour les accompagner sur des projets variés : développement web, automatisation, création de landing pages, stratégies d'acquisition et bien plus encore.",
+            intro: "🚀 Développeuse Web Front-End (freelance ou CDD/CDI)",
+            introText: "Je recherche actuellement des missions ou un poste dans le développement web (spécialité : front end)",
             valueTitle: "💡 Ma proposition de valeur",
-            valueText: "Spécialisée dans les projets où croissance rime avec expérimentation, j'interviens à l'intersection de la tech, de la data et du marketing. Forte de mon expérience en développement web, de mon sens analytique et de ma créativité, j'identifie des leviers de croissance concrets et les active rapidement pour générer des résultats mesurables.",
-            expertiseTitle: "🧰 Mes expertises clés",
-            expertise: [
-                { label: "Développement web :", value: "React, Symfony, WordPress, Drupal, PHP, JavaScript, HTML, CSS" },
-                { label: "Landing pages & design :", value: "Webflow, Carrd, Photoshop, Illustrator, Canva" },
-                { label: "SEO & analytics :", value: "Google Analytics, Google Tag Manager" },
-                { label: "Automatisation & no-code :", value: "Make, n8n, Airtable, Brevo, HubSpot" },
-                { label: "Création de contenu :", value: "Photoshop, CapCut, Canva pour vos réseaux sociaux" },
-                { label: "Gestion de projet :", value: "Relation client & optimisation des process" }
-            ],
-            ctaTitle: "✨ Discutons de votre projet !",
-            ctaText: "Vous recherchez un profil hybride tech / marketing / growth pour dynamiser vos projets ? Discutons de vos besoins et de la manière dont je peux vous aider à atteindre vos objectifs !",
+            valueText: "Développeuse front-end passionnée par la création d'interfaces utilisateur fluides et performantes, j'apporte également une vision marketing qui fait la différence : je ne me contente pas de développer, je construis des expériences qui convertissent. Mon approche technique rigoureuse combinée à ma compréhension des enjeux business me permet de livrer des projets qui répondent aux objectifs de croissance.",
+            expertiseTitle: "🧰 Mes compétences techniques",
+            webDevTitle: "Développement web",
+            webDev: "ReactJs, VueJs, Symfony, WordPress, Drupal, PHP, JavaScript (ES6+), HTML5, CSS3, Responsive design & optimisation des performances",
+            toolsTitle: "Outils & environnement",
+            tools: "Git, NPM, Webpack, SEO technique, Google Analytics, Google Tag Manager, Webflow, landing pages optimisées pour la conversion",
+            marketingTitle: "Atout marketing",
+            marketing: "Automatisation & intégrations : Make, n8n, Airtable, Brevo, HubSpot, Compréhension des tunnels de conversion et A/B testing, Création de contenu visuel : Photoshop, Illustrator, Canva",
+            ctaTitle: "✨ Parlons de votre projet !",
+            ctaText: "Vous cherchez une développeuse front-end capable de comprendre vos enjeux business et de traduire vos objectifs en interfaces performantes ? Échangeons sur vos besoins !",
             contactLabel: "Contact :"
         },
         en: {
             title: "Hello ! 👋 Welcome on my portfolio !",
             cvButton: "My resume",
-            intro: "🚀 Web Developer & Growth Hacker (Freelance or Full-time/Part-time)",
-            introText: "I bring my technical, creative, and strategic skills to help businesses with diverse projects: web development, automation, landing page creation, acquisition strategies, and more.",
-            valueTitle: "💡 My Value Proposition",
-            valueText: "Specialized in projects where growth meets experimentation, I work at the intersection of tech, data, and marketing. With my web development background, analytical mindset, and creativity, I identify concrete growth opportunities and activate them quickly to generate measurable results.",
-            expertiseTitle: "🧰 Core Expertise",
-            expertise: [
-                { label: "Web Development:", value: "React, Symfony, WordPress, Drupal, PHP, JavaScript, HTML, CSS" },
-                { label: "Landing Pages & Design:", value: "Webflow, Carrd, Photoshop, Illustrator, Canva" },
-                { label: "SEO & Analytics:", value: "Google Analytics, Google Tag Manager" },
-                { label: "Automation & No-code:", value: "Make, n8n, Airtable, Brevo, HubSpot" },
-                { label: "Content Creation:", value: "Photoshop, CapCut, Canva for social media" },
-                { label: "Project Management:", value: "Client relations & process optimization" }
-            ],
-            ctaTitle: "✨ Let's talk about your project !",
-            ctaText: "Looking for a hybrid tech / marketing / growth profile to boost your projects? Let's discuss your needs and how I can help you achieve your goals!",
+            intro: "🚀 Front-End Web Developer (freelance or permanent position)",
+            introText: "I'm currently seeking missions or a position in web development (specialty: front-end)",
+            valueTitle: "💡 My value proposition",
+            valueText: "Front-end developer passionate about creating smooth and high-performance user interfaces, I also bring a marketing perspective that makes a difference: I don't just develop, I build experiences that convert. My rigorous technical approach combined with my understanding of business challenges allows me to deliver projects that meet growth objectives.",
+            expertiseTitle: "🧰 My technical skills",
+            webDevTitle: "Web Development",
+            webDev: "ReactJs, VueJs, Symfony, WordPress, Drupal, PHP, JavaScript (ES6+), HTML5, CSS3, Responsive design & performance optimization",
+            toolsTitle: "Tools & Environment",
+            tools: "Git, NPM, Webpack, Technical SEO, Google Analytics, Google Tag Manager, Webflow, conversion-optimized landing pages",
+            marketingTitle: "Marketing Asset",
+            marketing: "Automation & integrations: Make, n8n, Airtable, Brevo, HubSpot, Understanding of conversion funnels and A/B testing, Visual content creation: Photoshop, Illustrator, Canva",
+            ctaTitle: "✨ Let's discuss your project!",
+            ctaText: "Looking for a front-end developer capable of understanding your business challenges and translating your objectives into high-performance interfaces? Let's connect!",
             contactLabel: "Contact:"
         }
     };
@@ -130,13 +126,29 @@ function About() {
                 <p style={{ marginBottom: '1rem' }}>
                     <strong>{currentContent.expertiseTitle}</strong>
                 </p>
-                <ul style={{ textAlign: 'left', marginBottom: '1.5rem', paddingLeft: '2rem' }}>
-                    {currentContent.expertise.map((item, index) => (
-                        <li key={index}>
-                            <strong>{item.label}</strong> {item.value}
-                        </li>
-                    ))}
-                </ul>
+                
+                <div style={{ textAlign: 'left', marginBottom: '1.5rem', paddingLeft: '1rem' }}>
+                    <p style={{ marginBottom: '0.5rem' }}>
+                        <strong>{currentContent.webDevTitle}</strong>
+                    </p>
+                    <p style={{ marginBottom: '1rem', paddingLeft: '1rem' }}>
+                        {currentContent.webDev}
+                    </p>
+
+                    <p style={{ marginBottom: '0.5rem' }}>
+                        <strong>{currentContent.toolsTitle}</strong>
+                    </p>
+                    <p style={{ marginBottom: '1rem', paddingLeft: '1rem' }}>
+                        {currentContent.tools}
+                    </p>
+
+                    <p style={{ marginBottom: '0.5rem' }}>
+                        <strong>{currentContent.marketingTitle}</strong>
+                    </p>
+                    <p style={{ marginBottom: '1rem', paddingLeft: '1rem' }}>
+                        {currentContent.marketing}
+                    </p>
+                </div>
 
                 <p style={{ marginBottom: '1rem' }}>
                     <strong>{currentContent.ctaTitle}</strong>
