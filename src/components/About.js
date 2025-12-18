@@ -11,7 +11,7 @@ function About() {
         fr: {
             title: "Hello ! 👋 Bienvenue sur mon portfolio !",
             cvButton: "Mon curriculum vitae",
-            intro: "🚀 Développeuse Web Front-End (freelance ou CDD/CDI)",
+            intro: "🚀 Développeuse Web Front-End",
             introText: "Je recherche actuellement des missions ou un poste dans le développement web (spécialité : front end)",
             valueTitle: "💡 Ma proposition de valeur",
             valueText: "Développeuse front-end passionnée par la création d'interfaces utilisateur fluides et performantes, j'apporte également une vision marketing qui fait la différence : je ne me contente pas de développer, je construis des expériences qui convertissent. Mon approche technique rigoureuse combinée à ma compréhension des enjeux business me permet de livrer des projets qui répondent aux objectifs de croissance.",
@@ -29,7 +29,7 @@ function About() {
         en: {
             title: "Hello ! 👋 Welcome on my portfolio !",
             cvButton: "My resume",
-            intro: "🚀 Front-End Web Developer (freelance or permanent position)",
+            intro: "🚀 Front-End Web Developer",
             introText: "I'm currently seeking missions or a position in web development (specialty: front-end)",
             valueTitle: "💡 My value proposition",
             valueText: "Front-end developer passionate about creating smooth and high-performance user interfaces, I also bring a marketing perspective that makes a difference: I don't just develop, I build experiences that convert. My rigorous technical approach combined with my understanding of business challenges allows me to deliver projects that meet growth objectives.",
