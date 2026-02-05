@@ -11,37 +11,31 @@ function About() {
         fr: {
             title: "Hello ! 👋 Bienvenue sur mon portfolio !",
             cvButton: "Mon curriculum vitae",
-            intro: "🚀 Développeuse Web Front-End",
-            introText: "Je recherche actuellement des missions ou un poste dans le développement web (spécialité : front end)",
-            valueTitle: "💡 Ma proposition de valeur",
-            valueText: "Développeuse front-end passionnée par la création d'interfaces utilisateur fluides et performantes, j'apporte également une vision marketing qui fait la différence : je ne me contente pas de développer, je construis des expériences qui convertissent. Mon approche technique rigoureuse combinée à ma compréhension des enjeux business me permet de livrer des projets qui répondent aux objectifs de croissance.",
+            intro: "🚀 Développeuse Web",
+            introText: "Développeuse web passionnée par la création d'interfaces utilisateur fluides et performantes, j'apporte également une vision marketing qui fait la différence : je ne me contente pas de développer, je construis des expériences qui convertissent. Mon approche technique rigoureuse combinée à ma compréhension des enjeux business me permet de livrer des projets qui répondent aux objectifs de croissance.",
             expertiseTitle: "🧰 Mes compétences techniques",
             webDevTitle: "Développement web",
-            webDev: "ReactJs, VueJs, Symfony, WordPress, Drupal, PHP, JavaScript (ES6+), HTML5, CSS3, Responsive design & optimisation des performances",
+            webDev: "ReactJs, Symfony, WordPress, Drupal, PHP, JavaScript (ES6+), HTML5, CSS3, responsive design & optimisation des performances",
             toolsTitle: "Outils & environnement",
             tools: "Git, NPM, Webpack, SEO technique, Google Analytics, Google Tag Manager, Webflow, landing pages optimisées pour la conversion",
             marketingTitle: "Atout marketing",
-            marketing: "Automatisation & intégrations : Make, n8n, Airtable, Brevo, HubSpot, Compréhension des tunnels de conversion et A/B testing, Création de contenu visuel : Photoshop, Illustrator, Canva",
-            ctaTitle: "✨ Parlons de votre projet !",
-            ctaText: "Vous cherchez une développeuse front-end capable de comprendre vos enjeux business et de traduire vos objectifs en interfaces performantes ? Échangeons sur vos besoins !",
+            marketing: "Automatisation & intégrations (Make, n8n, Airtable, Brevo, HubSpot), tunnels de conversion et A/B testing, création de contenu visuel (Photoshop, Illustrator, Canva)",
+            ctaTitle: "✨ Toujours ouverte aux échanges sur le développement web, le growth et les synergies tech/marketing !",
             contactLabel: "Contact :"
         },
         en: {
             title: "Hello ! 👋 Welcome on my portfolio !",
             cvButton: "My resume",
-            intro: "🚀 Front-End Web Developer",
-            introText: "I'm currently seeking missions or a position in web development (specialty: front-end)",
-            valueTitle: "💡 My value proposition",
-            valueText: "Front-end developer passionate about creating smooth and high-performance user interfaces, I also bring a marketing perspective that makes a difference: I don't just develop, I build experiences that convert. My rigorous technical approach combined with my understanding of business challenges allows me to deliver projects that meet growth objectives.",
+            intro: "🚀 Web Developer",
+            introText: "Web developer passionate about creating smooth and high-performance user interfaces, I also bring a marketing perspective that makes a difference: I don't just develop, I build experiences that convert. My rigorous technical approach combined with my understanding of business challenges allows me to deliver projects that meet growth objectives.",
             expertiseTitle: "🧰 My technical skills",
             webDevTitle: "Web Development",
-            webDev: "ReactJs, VueJs, Symfony, WordPress, Drupal, PHP, JavaScript (ES6+), HTML5, CSS3, Responsive design & performance optimization",
+            webDev: "ReactJs, VueJs, Symfony, WordPress, Drupal, PHP, JavaScript (ES6+), HTML5, CSS3, responsive design & performance optimization",
             toolsTitle: "Tools & Environment",
             tools: "Git, NPM, Webpack, Technical SEO, Google Analytics, Google Tag Manager, Webflow, conversion-optimized landing pages",
             marketingTitle: "Marketing Asset",
-            marketing: "Automation & integrations: Make, n8n, Airtable, Brevo, HubSpot, Understanding of conversion funnels and A/B testing, Visual content creation: Photoshop, Illustrator, Canva",
-            ctaTitle: "✨ Let's discuss your project!",
-            ctaText: "Looking for a front-end developer capable of understanding your business challenges and translating your objectives into high-performance interfaces? Let's connect!",
+            marketing: "Automation & integrations (Make, n8n, Airtable, Brevo, HubSpot), conversion funnels and A/B testing, visual content creation (Photoshop, Illustrator, Canva)",
+            ctaTitle: "✨ Always open to discussions about web development, growth, and tech/marketing synergies!",
             contactLabel: "Contact:"
         }
     };
@@ -109,18 +103,11 @@ function About() {
                 transition={{ duration: 0.4 }}
                 style={{ lineHeight: '1.8', fontSize: '1rem', textAlign: 'left' }}
             >
-                <p style={{ marginBottom: '1.5rem' }}>
+                <p style={{ marginBottom: '1rem' }}>
                     <strong>{currentContent.intro}</strong>
                 </p>
                 <p style={{ marginBottom: '1.5rem' }}>
                     {currentContent.introText}
-                </p>
-
-                <p style={{ marginBottom: '1rem' }}>
-                    <strong>{currentContent.valueTitle}</strong>
-                </p>
-                <p style={{ marginBottom: '1.5rem' }}>
-                    {currentContent.valueText}
                 </p>
 
                 <p style={{ marginBottom: '1rem' }}>
@@ -150,11 +137,8 @@ function About() {
                     </p>
                 </div>
 
-                <p style={{ marginBottom: '1rem' }}>
-                    <strong>{currentContent.ctaTitle}</strong>
-                </p>
                 <p style={{ marginBottom: '1.5rem' }}>
-                    {currentContent.ctaText}
+                    <strong>{currentContent.ctaTitle}</strong>
                 </p>
 
                 <p style={{ textAlign: 'center', fontSize: '1.1rem' }}>

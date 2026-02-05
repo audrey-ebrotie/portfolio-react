@@ -9,19 +9,19 @@ function Contact() {
     const content = {
         fr: {
             title: "Contactez-moi",
-            subtitle: "Une question, un projet, une collaboration ? N'hésitez pas à me contacter !",
+            subtitle: "",
             emailLabel: "Email",
             phoneLabel: "Téléphone",
-            availabilityTitle: "Disponibilité",
-            availability: "Actuellement disponible pour des missions en freelance ou des postes en CDD/CDI"
+            availabilityTitle: "Situation actuelle",
+            availability: "Actuellement en CDI chez W HUB — non disponible pour de nouvelles missions"
         },
         en: {
             title: "Contact Me",
-            subtitle: "A question, a project, a collaboration? Feel free to reach out!",
+            subtitle: "",
             emailLabel: "Email",
             phoneLabel: "Phone",
-            availabilityTitle: "Availability",
-            availability: "Currently available for freelance missions or full-time/part-time positions"
+            availabilityTitle: "Current status",
+            availability: "Currently employed full-time at W HUB — not available for new opportunities"
         }
     };
 
@@ -113,7 +113,7 @@ function Contact() {
                     </motion.div>
                 </div>
 
-                {/* Disponibilité */}
+                {/* Situation actuelle */}
                 <div style={{
                     backgroundColor: '#f0e7ff',
                     padding: '1.5rem',
@@ -121,7 +121,7 @@ function Contact() {
                     marginTop: '2rem'
                 }}>
                     <h3 style={{ marginBottom: '0.5rem', color: '#c892ff' }}>
-                        ✨ {currentContent.availabilityTitle}
+                        💼 {currentContent.availabilityTitle}
                     </h3>
                     <p style={{ margin: 0, color: '#555', fontSize: '1rem' }}>
                         {currentContent.availability}
